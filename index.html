@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YK Wellness — Therapeutic Massage & Osteopathy, London W10</title>
+  <meta name="description" content="Expert therapeutic massage, osteopathy, sports massage, cupping and dry needling at Westway Sports Centre, West London. 6 practitioners, 5.0 Google rating, 8+ years serving W10.">
+  <meta property="og:title" content="YK Wellness — London Therapeutic Clinic">
+  <meta property="og:description" content="More than a massage. A treatment built around you. Book at Westway Sports Centre, London W10.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://saturnresults.github.io/YK-WELLNESS/">
+  <link rel="stylesheet" href="css/design-system.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "YK Wellness",
+    "description": "Therapeutic massage, osteopathy and specialised treatments in West London",
+    "url": "https://saturnresults.github.io/YK-WELLNESS/",
+    "telephone": "+447910007933",
+    "email": "hello@ykwellness.co.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 Crowthorne Road, Westway Sports Centre",
+      "addressLocality": "London",
+      "postalCode": "W10 6RP",
+      "addressCountry": "GB"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.5197, "longitude": -0.2145 },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "80" },
+    "openingHours": ["Mo-Fr 07:00-21:00", "Sa 08:00-18:00", "Su 09:00-17:00"],
+    "priceRange": "££"
+  }
+  </script>
+  <style>
+    .marquee { overflow: hidden; border-top: 1px solid oklch(88% 0.016 75 / 0.5); padding: 14px 0; background: var(--c-canvas); }
+    .marquee__track { display: flex; gap: 0; width: max-content; animation: marquee-scroll 28s linear infinite; }
+    .marquee__inner { display: flex; align-items: center; gap: 0; white-space: nowrap; }
+    .marquee__item {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--c-stone);
+      padding: 0 2.5rem;
+    }
+    .marquee__sep { color: var(--c-amber); font-size: 0.5rem; }
+    @keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .marquee__track { animation: none; } }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="nav__pill" id="navPill">
+      <a href="index.html" class="nav__logo" aria-label="YK Wellness home">
+        <span class="nav__logo-yk">YK</span>
+        <span class="nav__logo-wellness">Wellness</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="massage-therapy.html" class="nav__link">Massage</a></li>
+        <li><a href="osteopathy.html" class="nav__link">Osteopathy</a></li>
+        <li><a href="sports-massage.html" class="nav__link">Sports</a></li>
+        <li><a href="team.html" class="nav__link">Team</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__cta-wrap">
+        <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary nav__cta">
+          Book Now <span class="btn__icon">↗</span>
+        </a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navOverlay">
+        <span class="nav__line"></span>
+        <span class="nav__line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-overlay" id="navOverlay" role="dialog" aria-label="Navigation menu">
+    <nav>
+      <ul class="nav-overlay__links" role="list">
+        <li><a href="index.html" class="nav-overlay__link">Home</a></li>
+        <li><a href="massage-therapy.html" class="nav-overlay__link">Massage Therapy</a></li>
+        <li><a href="osteopathy.html" class="nav-overlay__link">Osteopathy</a></li>
+        <li><a href="sports-massage.html" class="nav-overlay__link">Sports Massage</a></li>
+        <li><a href="cupping.html" class="nav-overlay__link">Cupping</a></li>
+        <li><a href="dry-needling.html" class="nav-overlay__link">Dry Needling</a></li>
+        <li><a href="team.html" class="nav-overlay__link">Team</a></li>
+        <li><a href="contact.html" class="nav-overlay__link">Contact</a></li>
+      </ul>
+      <div class="nav-overlay__actions">
+        <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Book Now <span class="btn__icon">↗</span></a>
+        <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="btn btn--outline">WhatsApp</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section class="hero" aria-label="Welcome to YK Wellness">
+      <div class="hero__content">
+        <div class="hero__eyebrow will-reveal">
+          <span class="eyebrow t-eyebrow">West London · Westway Sports Centre</span>
+        </div>
+        <h1 class="hero__headline will-reveal" data-delay="1">
+          More than<br>
+          a <em>massage.</em>
+        </h1>
+        <p class="t-body-lg hero__subtext will-reveal" data-delay="2">
+          A treatment built around you. Every session begins with a genuine conversation: your goals, your history, your body.
+        </p>
+        <div class="hero__actions will-reveal" data-delay="3">
+          <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            Book a Session <span class="btn__icon">↗</span>
+          </a>
+          <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+            Ask on WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero__image-col" aria-hidden="true">
+        <!-- Replace src with your hero image -->
+        <img
+          src="assets/hero.jpg"
+          alt=""
+          class="hero__image"
+          onerror="this.style.display='none'"
+        >
+        <div class="hero__image-slot img-slot"></div>
+      </div>
+    </section>
+
+    <!-- Marquee strip -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__inner">
+          <span class="marquee__item">Deep Tissue Massage</span><span class="marquee__sep">●</span>
+          <span class="marquee__item">Sports Massage</span><span class="marquee__sep">●</span>
+          <span class="marquee__item">Swedish Massage</span><span class="marquee__sep">●</span>
+          <span class="marquee__item">Osteopathy</span><span class="marquee__sep">●</span>
+          <span class="marquee__item">Dry Needling</span><span class="marquee__sep">●</span>
+          <span class="marquee__item">Cupping Therapy</span><span class="marquee__sep">●</span>
+          <span class="marquee__item">GOsC Registered</span><span class="marquee__sep">●</span>
+          <span class="marquee__item">5.0 Google Rating</span><span class="marquee__sep">●</span>
+          <span class="marquee__item">8+ Years in West London</span><span class="marquee__sep">●</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Trust Bar ── -->
+    <section class="trust-bar" aria-label="Practice highlights">
+      <div class="trust-bar__inner container">
+        <div class="trust-stat will-reveal">
+          <div class="trust-stat__figure">6</div>
+          <div class="trust-stat__label">Expert Practitioners</div>
+        </div>
+        <div class="trust-stat will-reveal" data-delay="1">
+          <div class="trust-stat__figure">5.0</div>
+          <div class="trust-stat__label">Google Rating</div>
+        </div>
+        <div class="trust-stat will-reveal" data-delay="2">
+          <div class="trust-stat__figure">8+</div>
+          <div class="trust-stat__label">Years in West London</div>
+        </div>
+        <div class="trust-stat will-reveal" data-delay="3">
+          <div class="trust-stat__figure">GOsC</div>
+          <div class="trust-stat__label">Registered Osteopaths</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Mission ── -->
+    <section class="mission" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="mission__inner">
+          <blockquote class="mission__quote will-reveal">
+            "Every session begins with a genuine conversation: your goals, your history, <mark>your body.</mark>"
+          </blockquote>
+          <div class="mission__body will-reveal" data-delay="1">
+            <span class="eyebrow t-eyebrow" style="margin-bottom: 1.5rem; display: inline-flex;">Our Approach</span>
+            <p class="mission__text t-body-lg">
+              We do not offer standardised treatments. At YK Wellness, every session is shaped by what you actually need, not a script. Our practitioners take the time to understand your situation before any treatment begins.
+            </p>
+            <p class="mission__text t-body">
+              Whether you are managing chronic pain, recovering from an injury, or maintaining peak physical condition, the treatment we design is specific to you.
+            </p>
+            <a href="team.html" class="btn btn--ghost">
+              Meet the team <span class="btn__arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Services Bento ── -->
+    <section class="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="services__header">
+          <span class="eyebrow t-eyebrow will-reveal">Treatments</span>
+          <h2 class="t-h2 will-reveal" id="services-heading" data-delay="1" style="max-width: 22ch; margin-top: 1rem;">
+            Precision care for every body
+          </h2>
+        </div>
+        <div class="services__grid">
+
+          <!-- Feature: Deep Tissue -->
+          <article class="service-card service-card--feature will-reveal">
+            <div class="service-card__inner">
+              <div class="service-card__image img-slot" role="img" aria-label="Deep tissue massage treatment">
+                <!-- Replace with: <img src="assets/deep-tissue.jpg" alt="Deep tissue massage" class="service-card__image"> -->
+              </div>
+              <div class="service-card__overlay" aria-hidden="true"></div>
+              <div class="service-card__content">
+                <span class="eyebrow eyebrow--light t-eyebrow service-card__eyebrow">Signature Treatment</span>
+                <h3 class="service-card__name t-h3">Deep Tissue Massage</h3>
+                <p class="service-card__meta">60 min · 90 min</p>
+                <p class="service-card__desc">Firm, focused pressure that works through layers of muscle to release chronic tension. Built for those who carry their stress in their body.</p>
+                <div class="service-card__price"><span>from</span>£75</div>
+                <a href="deep-tissue.html" class="btn btn--ghost" style="color: var(--c-amber-warm);">Learn more <span class="btn__arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stack: Swedish -->
+          <article class="service-card service-card--stack will-reveal" data-delay="1">
+            <div class="service-card__inner">
+              <span class="eyebrow t-eyebrow service-card__eyebrow">Restorative</span>
+              <h3 class="service-card__name">Swedish Massage</h3>
+              <p class="service-card__meta">60 min · 90 min</p>
+              <p class="service-card__desc">Full-body flowing strokes that ease tension, improve circulation, and leave you genuinely restored.</p>
+              <div class="service-card__price"><span>from</span>£75</div>
+              <div class="service-card__footer">
+                <a href="swedish.html" class="btn btn--ghost">Learn more <span class="btn__arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stack: Osteopathy -->
+          <article class="service-card service-card--stack will-reveal" data-delay="2">
+            <div class="service-card__inner">
+              <span class="eyebrow t-eyebrow service-card__eyebrow">Clinical</span>
+              <h3 class="service-card__name">Osteopathy</h3>
+              <p class="service-card__meta">Initial · Follow-up</p>
+              <p class="service-card__desc">GOsC-registered osteopaths diagnosing and treating the root cause of musculoskeletal problems, not just the symptoms.</p>
+              <div class="service-card__price"><span>from</span>£75</div>
+              <div class="service-card__footer">
+                <a href="osteopathy.html" class="btn btn--ghost">Learn more <span class="btn__arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Row: Sports Massage -->
+          <article class="service-card service-card--row will-reveal">
+            <div class="service-card__inner">
+              <span class="eyebrow t-eyebrow service-card__eyebrow">Performance</span>
+              <h3 class="service-card__name">Sports Massage</h3>
+              <p class="service-card__meta">30 min · 60 min</p>
+              <div class="service-card__price"><span>from</span>£53</div>
+              <div class="service-card__footer">
+                <a href="sports-massage.html" class="btn btn--ghost">Learn more <span class="btn__arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Row: Cupping -->
+          <article class="service-card service-card--row will-reveal" data-delay="1">
+            <div class="service-card__inner">
+              <span class="eyebrow t-eyebrow service-card__eyebrow">Specialised</span>
+              <h3 class="service-card__name">Cupping Therapy</h3>
+              <p class="service-card__meta">30 min · 60 min</p>
+              <div class="service-card__price"><span>from</span>£53</div>
+              <div class="service-card__footer">
+                <a href="cupping.html" class="btn btn--ghost">Learn more <span class="btn__arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Row: Dry Needling -->
+          <article class="service-card service-card--row will-reveal" data-delay="2">
+            <div class="service-card__inner">
+              <span class="eyebrow t-eyebrow service-card__eyebrow">Specialised</span>
+              <h3 class="service-card__name">Dry Needling</h3>
+              <p class="service-card__meta">30 min · 60 min</p>
+              <div class="service-card__price"><span>from</span>£53</div>
+              <div class="service-card__footer">
+                <a href="dry-needling.html" class="btn btn--ghost">Learn more <span class="btn__arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How It Works ── -->
+    <section class="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="process__header">
+          <span class="eyebrow t-eyebrow will-reveal">How it works</span>
+          <h2 class="t-h2 will-reveal" id="process-heading" data-delay="1" style="margin-top: 1rem; max-width: 20ch;">
+            Simple from the start
+          </h2>
+        </div>
+        <div class="process__steps">
+          <div class="process-step will-reveal">
+            <div class="process-step__number">01</div>
+            <h3 class="process-step__title">Book</h3>
+            <p class="process-step__text t-body">Choose your treatment and practitioner. Book online via Fresha in under two minutes, or message us on WhatsApp if you want guidance first.</p>
+          </div>
+          <div class="process-step will-reveal" data-delay="1">
+            <div class="process-step__number">02</div>
+            <h3 class="process-step__title">Consult</h3>
+            <p class="process-step__text t-body">Your session begins with a real conversation. We understand your goals, history and any concerns before any treatment starts.</p>
+          </div>
+          <div class="process-step will-reveal" data-delay="2">
+            <div class="process-step__number">03</div>
+            <h3 class="process-step__title">Treat</h3>
+            <p class="process-step__text t-body">A treatment built around what you actually need. Not a script, not a standard hour. Precise, effective work from practitioners who know their craft.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Team Preview ── -->
+    <section class="team-preview" aria-labelledby="team-heading">
+      <div class="container">
+        <div class="team-preview__header">
+          <div>
+            <span class="eyebrow t-eyebrow will-reveal">Your Practitioners</span>
+            <h2 class="t-h2 will-reveal" id="team-heading" data-delay="1" style="margin-top: 1rem; max-width: 20ch;">
+              Credentials behind every treatment
+            </h2>
+          </div>
+          <a href="team.html" class="btn btn--ghost will-reveal" data-delay="2">
+            Meet everyone <span class="btn__arrow">→</span>
+          </a>
+        </div>
+        <div class="team-grid">
+          <article class="practitioner-card will-reveal">
+            <div class="practitioner-card__inner">
+              <div class="practitioner-card__image">
+                <div class="img-slot" style="width:100%;height:100%;position:absolute;inset:0;" role="img" aria-label="Yury, Lead Therapist"></div>
+              </div>
+              <div class="practitioner-card__body">
+                <div class="practitioner-card__role">Lead Therapist</div>
+                <h3 class="practitioner-card__name">Yury</h3>
+                <p class="practitioner-card__bio">8+ years of clinical experience. Specialising in deep tissue, sports rehabilitation and complex musculoskeletal cases.</p>
+              </div>
+            </div>
+          </article>
+          <article class="practitioner-card will-reveal" data-delay="1">
+            <div class="practitioner-card__inner">
+              <div class="practitioner-card__image">
+                <div class="img-slot" style="width:100%;height:100%;position:absolute;inset:0;" role="img" aria-label="Christos, Osteopath"></div>
+              </div>
+              <div class="practitioner-card__body">
+                <div class="practitioner-card__role">Osteopath · GOsC Registered</div>
+                <h3 class="practitioner-card__name">Christos</h3>
+                <p class="practitioner-card__bio">GOsC-registered osteopath. Expert in structural assessment, joint mobilisation and evidence-based treatment planning.</p>
+              </div>
+            </div>
+          </article>
+          <article class="practitioner-card will-reveal" data-delay="2">
+            <div class="practitioner-card__inner">
+              <div class="practitioner-card__image">
+                <div class="img-slot" style="width:100%;height:100%;position:absolute;inset:0;" role="img" aria-label="YK Wellness Practitioner"></div>
+              </div>
+              <div class="practitioner-card__body">
+                <div class="practitioner-card__role">Sports Therapist</div>
+                <h3 class="practitioner-card__name">Your Practitioner</h3>
+                <p class="practitioner-card__bio">Every member of the YK Wellness team is selected for clinical excellence and a genuine commitment to patient outcomes.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="testimonials__header">
+          <span class="eyebrow eyebrow--light t-eyebrow will-reveal">Client Stories</span>
+          <h2 class="t-h2 testimonials__title will-reveal" id="testimonials-heading" data-delay="1" style="margin-top: 1rem;">
+            What clients say
+          </h2>
+        </div>
+        <div class="testimonials__grid">
+          <div class="testimonial-card will-reveal">
+            <div class="testimonial-card__inner">
+              <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-card__text">"I had chronic lower back pain for two years. After three sessions at YK Wellness, I had more relief than from months of other treatments. The consultation at the start made all the difference."</p>
+              <div class="testimonial-card__stars" aria-label="5 star rating">★ ★ ★ ★ ★</div>
+              <div class="testimonial-card__author">James R.</div>
+              <div class="testimonial-card__detail">Deep Tissue Massage · West London</div>
+            </div>
+          </div>
+          <div class="testimonial-card will-reveal" data-delay="1">
+            <div class="testimonial-card__inner">
+              <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-card__text">"Yury is exceptional. He listened, assessed, and delivered exactly what I needed. I have been going for sports massage every three weeks since my first visit. Genuinely the best in West London."</p>
+              <div class="testimonial-card__stars" aria-label="5 star rating">★ ★ ★ ★ ★</div>
+              <div class="testimonial-card__author">Sarah M.</div>
+              <div class="testimonial-card__detail">Sports Massage · Marathon Runner</div>
+            </div>
+          </div>
+          <div class="testimonial-card will-reveal" data-delay="2">
+            <div class="testimonial-card__inner">
+              <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-card__text">"Christos is a brilliant osteopath. He explained exactly what was causing my neck pain and the treatment plan made total sense. Three sessions in and I am pain-free."</p>
+              <div class="testimonial-card__stars" aria-label="5 star rating">★ ★ ★ ★ ★</div>
+              <div class="testimonial-card__author">Michael T.</div>
+              <div class="testimonial-card__detail">Osteopathy · Notting Hill</div>
+            </div>
+          </div>
+          <div class="testimonial-card will-reveal" data-delay="3">
+            <div class="testimonial-card__inner">
+              <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-card__text">"I was sceptical about dry needling but the results were immediate. The practitioner was professional, thorough, and made me feel at ease throughout. Highly recommend."</p>
+              <div class="testimonial-card__stars" aria-label="5 star rating">★ ★ ★ ★ ★</div>
+              <div class="testimonial-card__author">Priya K.</div>
+              <div class="testimonial-card__detail">Dry Needling · W10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Treatment Recommender ── -->
+    <section class="recommender" aria-labelledby="rec-heading">
+      <div class="container">
+        <div class="recommender__inner">
+          <div class="recommender__copy will-reveal">
+            <span class="eyebrow eyebrow--light t-eyebrow" style="margin-bottom: 1.5rem; display: inline-flex;">Not sure where to start?</span>
+            <h2 class="t-h2 recommender__heading" id="rec-heading">
+              Find your treatment
+            </h2>
+            <p class="recommender__sub t-body">
+              Answer three quick questions and we will recommend the treatment that fits your situation. You can always message us if you want a second opinion.
+            </p>
+          </div>
+          <div class="recommender__panel" id="recommender" role="region" aria-label="Treatment finder">
+            <div class="recommender__progress" aria-hidden="true">
+              <div class="recommender__dot" id="dot0"></div>
+              <div class="recommender__dot" id="dot1"></div>
+              <div class="recommender__dot" id="dot2"></div>
+              <div class="recommender__dot" id="dot3"></div>
+            </div>
+
+            <!-- Step 1: Goal -->
+            <div class="recommender__step active" data-step="0">
+              <p class="recommender__question">What brings you in today?</p>
+              <div class="recommender__options">
+                <button class="recommender__option" data-value="pain">Pain or tension relief</button>
+                <button class="recommender__option" data-value="recovery">Injury recovery</button>
+                <button class="recommender__option" data-value="sports">Sports performance</button>
+                <button class="recommender__option" data-value="wellness">General wellness</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Area -->
+            <div class="recommender__step" data-step="1">
+              <p class="recommender__question">Which area needs attention?</p>
+              <div class="recommender__options">
+                <button class="recommender__option" data-value="back">Back and neck</button>
+                <button class="recommender__option" data-value="shoulders">Shoulders and arms</button>
+                <button class="recommender__option" data-value="legs">Legs and lower body</button>
+                <button class="recommender__option" data-value="full">Full body</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Experience -->
+            <div class="recommender__step" data-step="2">
+              <p class="recommender__question">Have you tried any of these before?</p>
+              <div class="recommender__options">
+                <button class="recommender__option" data-value="massage">Massage</button>
+                <button class="recommender__option" data-value="osteopathy">Osteopathy</button>
+                <button class="recommender__option" data-value="needling">Needling or cupping</button>
+                <button class="recommender__option" data-value="new">New to treatment</button>
+              </div>
+            </div>
+
+            <!-- Step 4: Result -->
+            <div class="recommender__step recommender__result-step" data-step="3">
+              <div class="recommender__result">
+                <div class="recommender__result-tag">We recommend</div>
+                <div class="recommender__result-name">Deep Tissue Massage</div>
+                <p class="recommender__result-desc t-body">Your ideal treatment based on what you have told us.</p>
+                <div class="recommender__result-actions">
+                  <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary recommender__result-book">
+                    Book Now <span class="btn__icon">↗</span>
+                  </a>
+                  <a href="deep-tissue.html" class="btn btn--outline recommender__result-learn">Learn More</a>
+                </div>
+              </div>
+              <button class="recommender__restart" type="button">Start again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Band ── -->
+    <section class="cta-band" aria-label="Book a treatment">
+      <div class="container">
+        <h2 class="t-h2 cta-band__heading will-reveal">
+          Ready when you are
+        </h2>
+        <p class="t-body cta-band__sub will-reveal" data-delay="1">
+          Book online in under two minutes, or speak to the team first. We are here to help you find the right treatment.
+        </p>
+        <div class="cta-band__actions will-reveal" data-delay="2">
+          <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            Book via Fresha <span class="btn__icon">↗</span>
+          </a>
+          <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
+            WhatsApp Us
+          </a>
+          <a href="contact.html" class="btn btn--outline" style="border-color: oklch(91% 0.020 80 / 0.25); color: var(--c-on-dark);">
+            Get in touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo-mark">YK Wellness</div>
+          <p class="footer__tagline">More than a massage. A treatment built around you.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/ykwellness" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+          </div>
+        </div>
+        <div class="footer__nav-grid">
+          <div class="footer__col">
+            <h4>Treatments</h4>
+            <ul role="list">
+              <li><a href="massage-therapy.html">Massage Therapy</a></li>
+              <li><a href="deep-tissue.html">Deep Tissue</a></li>
+              <li><a href="swedish.html">Swedish Massage</a></li>
+              <li><a href="sports-massage.html">Sports Massage</a></li>
+              <li><a href="osteopathy.html">Osteopathy</a></li>
+              <li><a href="cupping.html">Cupping Therapy</a></li>
+              <li><a href="dry-needling.html">Dry Needling</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Clinic</h4>
+            <ul role="list">
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer">Book Online</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <ul role="list">
+              <li><a href="tel:+447910007933">07910 007933</a></li>
+              <li><a href="mailto:hello@ykwellness.co.uk">hello@ykwellness.co.uk</a></li>
+              <li><a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            </ul>
+            <address>
+              Westway Sports Centre<br>
+              1 Crowthorne Road<br>
+              London W10 6RP
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 YK Wellness. All rights reserved.</p>
+        <p class="footer__copy"><a href="https://instagram.com/ykwellness" target="_blank" rel="noopener noreferrer" style="color: inherit;">@ykwellness</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <div class="chat-float" aria-label="Quick contact">
+    <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="chat-float__btn" aria-label="Message us on WhatsApp" title="WhatsApp">
+      💬
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
