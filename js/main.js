@@ -247,20 +247,6 @@
     goToStep(0);
   }
 
-  /* ── Page transitions ──────────────────────────────────── */
-  document.addEventListener('click', e => {
-    const link = e.target.closest('a[href]');
-    if (!link) return;
-    const href = link.getAttribute('href');
-    if (!href || link.target === '_blank' ||
-        href.startsWith('http') || href.startsWith('#') ||
-        href.startsWith('mailto') || href.startsWith('tel') ||
-        href.startsWith('javascript')) return;
-    e.preventDefault();
-    document.documentElement.classList.add('is-leaving');
-    setTimeout(() => { window.location.href = href; }, 230);
-  });
-
   /* ── Marquee (hero bottom strip) ───────────────────────── */
   const marquee = document.querySelector('.marquee__inner');
   if (marquee) {
