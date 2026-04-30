@@ -52,50 +52,51 @@
 </head>
 <body>
 
-  <!-- ── Navigation ── -->
   <nav class="nav" id="nav" aria-label="Main navigation">
-    <div class="nav__pill" id="navPill">
-      <a href="index.html" class="nav__logo" aria-label="YK Wellness home">
-        <span class="nav__logo-yk">YK</span>
-        <span class="nav__logo-wellness">Wellness</span>
-      </a>
-      <ul class="nav__links" role="list">
-        <li><a href="massage-therapy.html" class="nav__link">Massage</a></li>
-        <li><a href="osteopathy.html" class="nav__link">Osteopathy</a></li>
-        <li><a href="sports-massage.html" class="nav__link">Sports</a></li>
-        <li><a href="team.html" class="nav__link">Team</a></li>
-        <li><a href="contact.html" class="nav__link">Contact</a></li>
-      </ul>
-      <div class="nav__cta-wrap">
-        <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary nav__cta">
-          Book Now <span class="btn__icon">↗</span>
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="YK Wellness home">
+          <img src="LOGOYKW.png" alt="YK Wellness" class="nav__logo-img">
         </a>
+        <div class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <div class="nav__dropdown">
+            <a href="massage-therapy.html" class="nav__link">Massage Therapy ▾</a>
+            <div class="nav__dropdown-menu">
+              <a href="deep-tissue.html">Deep Tissue Massage</a>
+              <a href="sports-massage.html">Sports Massage</a>
+              <a href="swedish.html">Swedish Massage</a>
+              <a href="cupping.html">Cupping Therapy</a>
+              <a href="dry-needling.html">Dry Needling</a>
+            </div>
+          </div>
+          <a href="osteopathy.html" class="nav__link">Osteopathy</a>
+          <a href="team.html" class="nav__link">Our Team</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+        <a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer" class="btn btn--primary nav__cta">Book Now <span class="btn__icon">↗</span></a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span class="nav__line"></span><span class="nav__line"></span><span class="nav__line"></span>
+        </button>
       </div>
-      <button class="nav__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navOverlay">
-        <span class="nav__line"></span>
-        <span class="nav__line"></span>
-      </button>
     </div>
   </nav>
-
-  <!-- Mobile overlay -->
-  <div class="nav-overlay" id="navOverlay" role="dialog" aria-label="Navigation menu">
-    <nav>
-      <ul class="nav-overlay__links" role="list">
-        <li><a href="index.html" class="nav-overlay__link">Home</a></li>
-        <li><a href="massage-therapy.html" class="nav-overlay__link">Massage Therapy</a></li>
-        <li><a href="osteopathy.html" class="nav-overlay__link">Osteopathy</a></li>
-        <li><a href="sports-massage.html" class="nav-overlay__link">Sports Massage</a></li>
-        <li><a href="cupping.html" class="nav-overlay__link">Cupping</a></li>
-        <li><a href="dry-needling.html" class="nav-overlay__link">Dry Needling</a></li>
-        <li><a href="team.html" class="nav-overlay__link">Team</a></li>
-        <li><a href="contact.html" class="nav-overlay__link">Contact</a></li>
-      </ul>
-      <div class="nav-overlay__actions">
-        <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Book Now <span class="btn__icon">↗</span></a>
-        <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="btn btn--outline">WhatsApp</a>
-      </div>
-    </nav>
+  <div class="nav__mobile-overlay" id="mobileOverlay"></div>
+  <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Navigation menu">
+    <button class="nav__mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="index.html" class="nav__mobile-link">Home</a>
+    <a href="massage-therapy.html" class="nav__mobile-link">Massage Therapy</a>
+    <div class="nav__mobile-sub">
+      <a href="deep-tissue.html">— Deep Tissue</a>
+      <a href="sports-massage.html">— Sports Massage</a>
+      <a href="swedish.html">— Swedish Massage</a>
+      <a href="cupping.html">— Cupping Therapy</a>
+      <a href="dry-needling.html">— Dry Needling</a>
+    </div>
+    <a href="osteopathy.html" class="nav__mobile-link">Osteopathy</a>
+    <a href="team.html" class="nav__mobile-link">Our Team</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+    <a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer" class="btn btn--primary nav__mobile-book">Book Appointment <span class="btn__icon">↗</span></a>
   </div>
 
   <main>
@@ -114,7 +115,7 @@
           A treatment built around you. Every session begins with a genuine conversation: your goals, your history, your body.
         </p>
         <div class="hero__actions will-reveal" data-delay="3">
-          <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+          <a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
             Book a Session <span class="btn__icon">↗</span>
           </a>
           <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
@@ -191,6 +192,80 @@
             <a href="team.html" class="btn btn--ghost">
               Meet the team <span class="btn__arrow">→</span>
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Treatment Recommender ── -->
+    <section class="recommender" aria-labelledby="rec-heading">
+      <div class="container">
+        <div class="recommender__inner">
+          <div class="recommender__copy will-reveal">
+            <span class="eyebrow eyebrow--light t-eyebrow" style="margin-bottom: 1.5rem; display: inline-flex;">Not sure where to start?</span>
+            <h2 class="t-h2 recommender__heading" id="rec-heading">
+              Find your treatment
+            </h2>
+            <p class="recommender__sub t-body">
+              Answer three quick questions and we will recommend the treatment that fits your situation. You can always message us if you want a second opinion.
+            </p>
+          </div>
+          <div class="recommender__panel" id="recommender" role="region" aria-label="Treatment finder">
+            <div class="recommender__progress" aria-hidden="true">
+              <div class="recommender__dot" id="dot0"></div>
+              <div class="recommender__dot" id="dot1"></div>
+              <div class="recommender__dot" id="dot2"></div>
+              <div class="recommender__dot" id="dot3"></div>
+            </div>
+
+            <!-- Step 1: Goal -->
+            <div class="recommender__step active" data-step="0">
+              <p class="recommender__question">What brings you in today?</p>
+              <div class="recommender__options">
+                <button class="recommender__option" data-value="pain">Pain or tension relief</button>
+                <button class="recommender__option" data-value="recovery">Injury recovery</button>
+                <button class="recommender__option" data-value="sports">Sports performance</button>
+                <button class="recommender__option" data-value="wellness">General wellness</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Area -->
+            <div class="recommender__step" data-step="1">
+              <p class="recommender__question">Which area needs attention?</p>
+              <div class="recommender__options">
+                <button class="recommender__option" data-value="back">Back and neck</button>
+                <button class="recommender__option" data-value="shoulders">Shoulders and arms</button>
+                <button class="recommender__option" data-value="legs">Legs and lower body</button>
+                <button class="recommender__option" data-value="full">Full body</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Experience -->
+            <div class="recommender__step" data-step="2">
+              <p class="recommender__question">Have you tried any of these before?</p>
+              <div class="recommender__options">
+                <button class="recommender__option" data-value="massage">Massage</button>
+                <button class="recommender__option" data-value="osteopathy">Osteopathy</button>
+                <button class="recommender__option" data-value="needling">Needling or cupping</button>
+                <button class="recommender__option" data-value="new">New to treatment</button>
+              </div>
+            </div>
+
+            <!-- Step 4: Result -->
+            <div class="recommender__step recommender__result-step" data-step="3">
+              <div class="recommender__result">
+                <div class="recommender__result-tag">We recommend</div>
+                <div class="recommender__result-name">Deep Tissue Massage</div>
+                <p class="recommender__result-desc t-body">Your ideal treatment based on what you have told us.</p>
+                <div class="recommender__result-actions">
+                  <a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer" class="btn btn--primary recommender__result-book">
+                    Book Now <span class="btn__icon">↗</span>
+                  </a>
+                  <a href="deep-tissue.html" class="btn btn--outline recommender__result-learn">Learn More</a>
+                </div>
+              </div>
+              <button class="recommender__restart" type="button">Start again</button>
+            </div>
           </div>
         </div>
       </div>
@@ -430,80 +505,6 @@
       </div>
     </section>
 
-    <!-- ── Treatment Recommender ── -->
-    <section class="recommender" aria-labelledby="rec-heading">
-      <div class="container">
-        <div class="recommender__inner">
-          <div class="recommender__copy will-reveal">
-            <span class="eyebrow eyebrow--light t-eyebrow" style="margin-bottom: 1.5rem; display: inline-flex;">Not sure where to start?</span>
-            <h2 class="t-h2 recommender__heading" id="rec-heading">
-              Find your treatment
-            </h2>
-            <p class="recommender__sub t-body">
-              Answer three quick questions and we will recommend the treatment that fits your situation. You can always message us if you want a second opinion.
-            </p>
-          </div>
-          <div class="recommender__panel" id="recommender" role="region" aria-label="Treatment finder">
-            <div class="recommender__progress" aria-hidden="true">
-              <div class="recommender__dot" id="dot0"></div>
-              <div class="recommender__dot" id="dot1"></div>
-              <div class="recommender__dot" id="dot2"></div>
-              <div class="recommender__dot" id="dot3"></div>
-            </div>
-
-            <!-- Step 1: Goal -->
-            <div class="recommender__step active" data-step="0">
-              <p class="recommender__question">What brings you in today?</p>
-              <div class="recommender__options">
-                <button class="recommender__option" data-value="pain">Pain or tension relief</button>
-                <button class="recommender__option" data-value="recovery">Injury recovery</button>
-                <button class="recommender__option" data-value="sports">Sports performance</button>
-                <button class="recommender__option" data-value="wellness">General wellness</button>
-              </div>
-            </div>
-
-            <!-- Step 2: Area -->
-            <div class="recommender__step" data-step="1">
-              <p class="recommender__question">Which area needs attention?</p>
-              <div class="recommender__options">
-                <button class="recommender__option" data-value="back">Back and neck</button>
-                <button class="recommender__option" data-value="shoulders">Shoulders and arms</button>
-                <button class="recommender__option" data-value="legs">Legs and lower body</button>
-                <button class="recommender__option" data-value="full">Full body</button>
-              </div>
-            </div>
-
-            <!-- Step 3: Experience -->
-            <div class="recommender__step" data-step="2">
-              <p class="recommender__question">Have you tried any of these before?</p>
-              <div class="recommender__options">
-                <button class="recommender__option" data-value="massage">Massage</button>
-                <button class="recommender__option" data-value="osteopathy">Osteopathy</button>
-                <button class="recommender__option" data-value="needling">Needling or cupping</button>
-                <button class="recommender__option" data-value="new">New to treatment</button>
-              </div>
-            </div>
-
-            <!-- Step 4: Result -->
-            <div class="recommender__step recommender__result-step" data-step="3">
-              <div class="recommender__result">
-                <div class="recommender__result-tag">We recommend</div>
-                <div class="recommender__result-name">Deep Tissue Massage</div>
-                <p class="recommender__result-desc t-body">Your ideal treatment based on what you have told us.</p>
-                <div class="recommender__result-actions">
-                  <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary recommender__result-book">
-                    Book Now <span class="btn__icon">↗</span>
-                  </a>
-                  <a href="deep-tissue.html" class="btn btn--outline recommender__result-learn">Learn More</a>
-                </div>
-              </div>
-              <button class="recommender__restart" type="button">Start again</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ── CTA Band ── -->
     <section class="cta-band" aria-label="Book a treatment">
       <div class="container">
@@ -514,7 +515,7 @@
           Book online in under two minutes, or speak to the team first. We are here to help you find the right treatment.
         </p>
         <div class="cta-band__actions will-reveal" data-delay="2">
-          <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+          <a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
             Book via Fresha <span class="btn__icon">↗</span>
           </a>
           <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
@@ -558,7 +559,7 @@
             <ul role="list">
               <li><a href="team.html">Our Team</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer">Book Online</a></li>
+              <li><a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer">Book Online</a></li>
             </ul>
           </div>
           <div class="footer__col">

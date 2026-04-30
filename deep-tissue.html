@@ -11,42 +11,50 @@
 <body>
 
   <nav class="nav" id="nav" aria-label="Main navigation">
-    <div class="nav__pill" id="navPill">
-      <a href="index.html" class="nav__logo" aria-label="YK Wellness home">
-        <span class="nav__logo-yk">YK</span><span class="nav__logo-wellness">Wellness</span>
-      </a>
-      <ul class="nav__links" role="list">
-        <li><a href="massage-therapy.html" class="nav__link active">Massage</a></li>
-        <li><a href="osteopathy.html" class="nav__link">Osteopathy</a></li>
-        <li><a href="sports-massage.html" class="nav__link">Sports</a></li>
-        <li><a href="team.html" class="nav__link">Team</a></li>
-        <li><a href="contact.html" class="nav__link">Contact</a></li>
-      </ul>
-      <div class="nav__cta-wrap">
-        <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary nav__cta">Book Now <span class="btn__icon">↗</span></a>
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="YK Wellness home">
+          <img src="LOGOYKW.png" alt="YK Wellness" class="nav__logo-img">
+        </a>
+        <div class="nav__links">
+          <a href="index.html" class="nav__link">Home</a>
+          <div class="nav__dropdown">
+            <a href="massage-therapy.html" class="nav__link">Massage Therapy ▾</a>
+            <div class="nav__dropdown-menu">
+              <a href="deep-tissue.html">Deep Tissue Massage</a>
+              <a href="sports-massage.html">Sports Massage</a>
+              <a href="swedish.html">Swedish Massage</a>
+              <a href="cupping.html">Cupping Therapy</a>
+              <a href="dry-needling.html">Dry Needling</a>
+            </div>
+          </div>
+          <a href="osteopathy.html" class="nav__link">Osteopathy</a>
+          <a href="team.html" class="nav__link">Our Team</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+        <a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer" class="btn btn--primary nav__cta">Book Now <span class="btn__icon">↗</span></a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span class="nav__line"></span><span class="nav__line"></span><span class="nav__line"></span>
+        </button>
       </div>
-      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
-        <span class="nav__line"></span><span class="nav__line"></span>
-      </button>
     </div>
   </nav>
-  <div class="nav-overlay" id="navOverlay" role="dialog" aria-label="Navigation menu">
-    <nav>
-      <ul class="nav-overlay__links" role="list">
-        <li><a href="index.html" class="nav-overlay__link">Home</a></li>
-        <li><a href="massage-therapy.html" class="nav-overlay__link">Massage Therapy</a></li>
-        <li><a href="osteopathy.html" class="nav-overlay__link">Osteopathy</a></li>
-        <li><a href="sports-massage.html" class="nav-overlay__link">Sports Massage</a></li>
-        <li><a href="cupping.html" class="nav-overlay__link">Cupping</a></li>
-        <li><a href="dry-needling.html" class="nav-overlay__link">Dry Needling</a></li>
-        <li><a href="team.html" class="nav-overlay__link">Team</a></li>
-        <li><a href="contact.html" class="nav-overlay__link">Contact</a></li>
-      </ul>
-      <div class="nav-overlay__actions">
-        <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Book Now <span class="btn__icon">↗</span></a>
-        <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="btn btn--outline">WhatsApp</a>
-      </div>
-    </nav>
+  <div class="nav__mobile-overlay" id="mobileOverlay"></div>
+  <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Navigation menu">
+    <button class="nav__mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="index.html" class="nav__mobile-link">Home</a>
+    <a href="massage-therapy.html" class="nav__mobile-link">Massage Therapy</a>
+    <div class="nav__mobile-sub">
+      <a href="deep-tissue.html">— Deep Tissue</a>
+      <a href="sports-massage.html">— Sports Massage</a>
+      <a href="swedish.html">— Swedish Massage</a>
+      <a href="cupping.html">— Cupping Therapy</a>
+      <a href="dry-needling.html">— Dry Needling</a>
+    </div>
+    <a href="osteopathy.html" class="nav__mobile-link">Osteopathy</a>
+    <a href="team.html" class="nav__mobile-link">Our Team</a>
+    <a href="contact.html" class="nav__mobile-link">Contact</a>
+    <a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer" class="btn btn--primary nav__mobile-book">Book Appointment <span class="btn__icon">↗</span></a>
   </div>
 
   <main>
@@ -57,7 +65,7 @@
         <h1 class="t-h1 page-hero__title will-reveal" id="page-title" data-delay="1">Deep Tissue Massage</h1>
         <p class="page-hero__sub will-reveal" data-delay="2">Firm, focused pressure that works through layers of muscle. For chronic tension, injury recovery, and the kind of pain that surface-level massage never reaches.</p>
         <div class="page-hero__actions will-reveal" data-delay="3">
-          <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Book Now <span class="btn__icon">↗</span></a>
+          <a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Book Now <span class="btn__icon">↗</span></a>
           <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">Ask on WhatsApp</a>
         </div>
       </div>
@@ -162,7 +170,7 @@
         <h2 class="t-h2 cta-band__heading will-reveal">Book deep tissue massage</h2>
         <p class="t-body cta-band__sub will-reveal" data-delay="1">At Westway Sports Centre, West London. Book online or speak to us first.</p>
         <div class="cta-band__actions will-reveal" data-delay="2">
-          <a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Book via Fresha <span class="btn__icon">↗</span></a>
+          <a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Book via Fresha <span class="btn__icon">↗</span></a>
           <a href="https://wa.me/447910007933" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">WhatsApp Us</a>
         </div>
       </div>
@@ -196,7 +204,7 @@
             <ul role="list">
               <li><a href="team.html">Our Team</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="YOUR_FRESHA_URL" target="_blank" rel="noopener noreferrer">Book Online</a></li>
+              <li><a href="https://www.fresha.com/a/yk-wellness-london-westway-sports-fitness-centre-uk-1-crowthorne-road-git4ohyh" target="_blank" rel="noopener noreferrer">Book Online</a></li>
             </ul>
           </div>
           <div class="footer__col">
