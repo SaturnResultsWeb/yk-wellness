@@ -727,8 +727,14 @@ address { font-style: normal; }
     transform var(--dur-slow) var(--ease-quart);
 }
 .service-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+.service-card--feature .service-card__image {
+  transition: transform 700ms var(--ease-quart);
+}
+.service-card--feature:hover .service-card__image {
+  transform: scale(1.06);
 }
 /* Card inner core */
 .service-card__inner {
@@ -835,6 +841,12 @@ address { font-style: normal; }
   height: 1px;
   background: var(--c-sage-light);
 }
+.process-step {
+  transition: transform var(--dur-mid) var(--ease-quart);
+}
+.process-step:hover {
+  transform: translateY(-4px);
+}
 .process-step__number {
   font-family: var(--font-display);
   font-size: 5rem;
@@ -843,6 +855,10 @@ address { font-style: normal; }
   line-height: 1;
   letter-spacing: -0.03em;
   margin-bottom: var(--s-4);
+  transition: color var(--dur-mid) var(--ease-quart);
+}
+.process-step:hover .process-step__number {
+  color: var(--c-sage-light);
 }
 .process-step__title {
   font-family: var(--font-display);
@@ -891,15 +907,23 @@ address { font-style: normal; }
   overflow: hidden;
   position: relative;
 }
+.practitioner-card {
+  transition: transform var(--dur-slow) var(--ease-quart), box-shadow var(--dur-slow) var(--ease-quart);
+}
+.practitioner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
 .practitioner-card__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: sepia(6%) saturate(88%) contrast(103%);
-  transition: filter var(--dur-page) var(--ease-quart);
+  transition: filter var(--dur-page) var(--ease-quart), transform 700ms var(--ease-quart);
 }
 .practitioner-card:hover .practitioner-card__img {
   filter: sepia(0%) saturate(100%) contrast(100%);
+  transform: scale(1.05);
 }
 .practitioner-card__body { padding: var(--s-6); }
 .practitioner-card__name {
@@ -940,6 +964,11 @@ address { font-style: normal; }
   border: 1px solid oklch(84% 0.038 162 / 0.18);
   border-radius: var(--r-2xl);
   padding: 6px;
+  transition: transform var(--dur-slow) var(--ease-quart), box-shadow var(--dur-slow) var(--ease-quart);
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 56px oklch(42% 0.082 162 / 0.16);
 }
 .testimonial-card__inner {
   background: var(--c-bark-mid);
@@ -1229,7 +1258,7 @@ address { font-style: normal; }
 }
 .chat-float__btn:hover {
   background: var(--c-deep);
-  transform: translateY(-2px);
+  transform: translateY(-4px) scale(1.1);
   box-shadow: var(--shadow-xl);
 }
 
@@ -1354,6 +1383,16 @@ address { font-style: normal; }
   font-weight: 400;
   color: var(--c-amber);
   letter-spacing: -0.01em;
+  transition: color var(--dur-fast) var(--ease-quart), transform var(--dur-fast) var(--ease-quart);
+}
+.pricing-row {
+  transition: padding-left var(--dur-fast) var(--ease-quart);
+  border-radius: var(--r-sm);
+}
+.pricing-row:hover .pricing-row__price {
+  color: var(--c-sage);
+  transform: scale(1.04);
+  transform-origin: right center;
 }
 
 /* ── Team Page ───────────────────────────────────────────── */
@@ -1380,10 +1419,19 @@ address { font-style: normal; }
   border: 1px solid var(--c-mist);
   border-radius: var(--r-xl);
   text-align: center;
+  transition: transform var(--dur-mid) var(--ease-quart), box-shadow var(--dur-mid) var(--ease-quart);
+}
+.credential-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
 .credential-item__icon {
   font-size: 1.5rem;
   margin-bottom: var(--s-3);
+  transition: color var(--dur-mid) var(--ease-quart);
+}
+.credential-item:hover .credential-item__icon {
+  color: var(--c-sage);
 }
 .credential-item__title {
   font-size: 0.875rem;
@@ -1483,8 +1531,8 @@ address { font-style: normal; }
   margin-bottom: var(--s-2);
 }
 .related-card__price { font-size: 0.875rem; color: var(--c-amber); font-weight: 400; }
-.related-card__arrow { color: var(--c-stone); float: right; transition: transform var(--dur-mid) var(--ease-quart); }
-.related-card:hover .related-card__arrow { transform: translate(2px, -2px); }
+.related-card__arrow { color: var(--c-stone); float: right; transition: transform var(--dur-mid) var(--ease-quart), color var(--dur-mid) var(--ease-quart); }
+.related-card:hover .related-card__arrow { transform: translate(4px, -4px); color: var(--c-sage); }
 
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 1024px) {
@@ -1560,12 +1608,31 @@ address { font-style: normal; }
   .credentials-grid { grid-template-columns: 1fr; }
 }
 
+/* ── Page Transitions ────────────────────────────────────── */
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+main {
+  animation: page-enter 0.55s var(--ease-expo) both;
+}
+
+html.is-leaving main {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.22s var(--ease-in), transform 0.22s var(--ease-in);
+  pointer-events: none;
+}
+
 /* ── Reduced Motion ──────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+  main { animation: none; }
+  html.is-leaving main { transition: none; opacity: 1; transform: none; }
   .will-reveal { opacity: 1; transform: none; filter: none; }
 }
 
